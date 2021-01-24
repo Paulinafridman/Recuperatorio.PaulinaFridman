@@ -94,8 +94,8 @@ module.exports = {
            usuario_id: req.session.usuarioLogueado.id
        })
        .then(a =>{
-           /*req.redirect('/usuario/misProductos');*/
-           req.redirect('/productos/detalle/'+a.id)
+          /* res.redirect('/usuario/misProductos');*/
+           res.redirect('/productos/misProductos')
        })
 
     },
